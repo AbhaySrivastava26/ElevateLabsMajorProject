@@ -1,0 +1,16 @@
+h1{
+    color: aqua;
+    background-color: black;
+}
+body{
+    background-color: rgb(161, 109, 142);
+}
+.heading{
+    color: rgb(17, 0, 255);
+    background-color: rgb(231, 165, 42);
+
+}
+button{
+    color: green;
+    background-color: blueviolet    ;
+}

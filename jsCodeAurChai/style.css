@@ -1,0 +1,12 @@
+.headings-class{
+    background-color: rgb(128, 156, 156);
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border :1px solid black;
+    margin:5px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(162, 115, 44);
+}
