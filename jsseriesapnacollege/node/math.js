@@ -11,3 +11,4 @@ import { generate} from "random-words";
 
 console.log(generate(5));
 console.log(generate(10,{ minLength: 5, maxLength: 5 }));
+console.log(generate(1))
