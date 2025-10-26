@@ -42,33 +42,33 @@
     //     console.log("rejected",err)
     // })
 
-    function asyncwait1(){
-        return new Promise((resolve,reject)=>{
-            setTimeout(()=>{
-            console.log("data1");
-            resolve("success1")
-            }, 4000)
-        })
-    }
-    function asyncwait2(){
-        return new Promise((resolve,reject)=>{
-         setTimeout(()=>{
-            console.log("data2")
-            resolve("success2")
-         },4000)
-        })
-    }
-console.log("fetcing data 1")
-let p1=asyncwait1()
-p1.then((res)=>{
-    console.log(res)
-    console.log("fetching data 2 ")
-let p2=asyncwait2()
-p2.then((res)=>{
-    console.log("res")
-})
+//     function asyncwait1(){
+//         return new Promise((resolve,reject)=>{
+//             setTimeout(()=>{
+//             console.log("data1");
+//             resolve("success1")
+//             }, 4000)
+//         })
+//     }
+//     function asyncwait2(){
+//         return new Promise((resolve,reject)=>{
+//          setTimeout(()=>{
+//             console.log("data2")
+//             resolve("success2")
+//          },4000)
+//         })
+//     }
+// console.log("fetcing data 1")
+// let p1=asyncwait1()
+// p1.then((res)=>{
+//     console.log(res)
+//     console.log("fetching data 2 ")
+// let p2=asyncwait2()
+// p2.then((res)=>{
+//     console.log("res")
+// })
 
-})
+// })
 
 
 
@@ -89,3 +89,22 @@ p2.then((res)=>{
 //     })
 // })
 // })
+
+
+
+// async function hello(){
+//     console.log("hello")
+// }
+function api(){
+    return new Promise((resolve,reject)=>{
+     setTimeout(()=>{
+        console.log("success")
+        resolve(200)
+     },4000)
+     
+    })
+}
+async function getwheather(){
+    await api()
+    await api()
+}
